@@ -10,9 +10,16 @@ else nameMessage = "long";
 
 let today = new Date();
 
+let myStyle = {
+  color: "blue",
+  textDecoration: "underline"
+};
+
 ReactDOM.render(
   <div>
-    <h1>Hello {name}!</h1>
+    <h1 className="heading" style={myStyle}>
+      Hello {name}!
+    </h1>
     <p>React at work says: {message}</p>
     <p>
       Your name is {name.length < 6 ? "short" : "long"}. (ternary operator
